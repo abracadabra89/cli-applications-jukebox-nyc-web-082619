@@ -58,14 +58,15 @@ end
 def run  
  puts "Please enter a command:" 
  user_response = gets.strip
- if user_response == "exit"
-   exit_jukebox
    if user_response = "list"
      list
      if user_response == "play"
        play
        if user_response == "help"
          help
-       
+         if user_response == "exit"
+            exit_jukebox
+            
+        
 end
 
