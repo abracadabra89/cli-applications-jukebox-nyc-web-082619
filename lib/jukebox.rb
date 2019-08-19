@@ -31,12 +31,9 @@ def help
  
 
 def list(songs)
-  newArr = []
-songs.each_with_index { |index, song|
-  newArr[song] = index + 1 +  '. '
-}
-  newArr
-  
+  my_songs.each_with_index do |song, index|
+    puts "#{index+1}. #{song}"
+  end
 end
 
 def play(songs)
