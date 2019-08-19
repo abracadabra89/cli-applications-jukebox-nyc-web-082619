@@ -42,7 +42,10 @@ end
 def play(songs)
  puts "Please enter a song name or number:"
  user_response = gets.strip
- puts say_hello(users_name)
+ if user_response == songs
+ puts "Playing <songs>"
+ else 
+   puts 
 end
 
 
