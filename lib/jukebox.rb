@@ -32,8 +32,8 @@ def help
 
 def list(songs)
   newArr = []
-songs.each_with_index { |index + '. ', song|
-  newArr[song] = index + 1
+songs.each_with_index { |index, song|
+  newArr[song] = index + 1 +  '. '
 }
   newArr
   
