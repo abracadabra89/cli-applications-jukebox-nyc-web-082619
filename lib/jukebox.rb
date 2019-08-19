@@ -26,10 +26,11 @@ def help
   puts "I accept the following commands:"
   puts "- help : displays this help message"
   puts "- play : lets you choose a song to play"
-  puts 
+  puts "- exit : exits this program"
  end
  
-def play
+def play(songs)
+  
   
 end
 
