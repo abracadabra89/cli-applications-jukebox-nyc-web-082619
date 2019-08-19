@@ -30,8 +30,9 @@ def help
  end
  
 def play(songs)
- %w(cat dog wombat).each_with_index { |item, index|
-  hash[item] = index
+  newArr = []
+songs.each_with_index { |index, song|
+  newArr[song] = index
 }
   
 end
