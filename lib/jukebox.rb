@@ -56,29 +56,25 @@ end
 
 
 def run(songs)
+  command = "" 
+  while command  
   puts "Please enter a command:"
-  gets.chomp()
-end
-  help()
-  input = prompt()
-  
-  while input != "exit"
-    if input == "list"
+  command = gets.downcase.strip  
+  case command 
+    when 'list'
       list(songs)
-      input = prompt()
-    elsif input == "play"
-      play(songs)
-      input = prompt()
-    elsif input == "help"
-      help()
-      input = prompt()
-    else
-      puts "Invalid command"
-      help()
-      input = prompt()
-    end
-  end
+      when 'play'
+        list(songs)
+        play(songs)
+      when 'help'
+        help 
+      when 'exit'
+        exit_jukebox
+        break 
+      else 
+        help 
+      end 
+    end 
+  end 
   
-  exit_jukebox()
-end
-
+    
