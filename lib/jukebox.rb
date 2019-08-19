@@ -56,6 +56,9 @@ end
 
 
 def run  
-  
+ puts "Please enter a command:" 
+ user_response = gets.strip
+ if user_response == "exit"
+   
 end
 
