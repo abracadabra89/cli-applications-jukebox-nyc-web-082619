@@ -29,17 +29,20 @@ def help
   puts "- exit : exits this program"
  end
  
-def play(songs)
+
+def list(songs)
   newArr = []
 songs.each_with_index { |index, song|
-  newArr[song] = index
+  newArr[song] = index + 1
 }
+  newArr
   
 end
 
-def list 
-  
+def play(songs)
+ 
 end
+
 
 def exit_jukebox
   
