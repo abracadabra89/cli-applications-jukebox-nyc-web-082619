@@ -40,7 +40,9 @@ songs.each_with_index { |index + '. ', song|
 end
 
 def play(songs)
- 
+ puts "Please enter a song name or number:"
+ user_response = gets.strip
+ puts say_hello(users_name)
 end
 
 
