@@ -45,12 +45,12 @@ def play(songs)
  if user_response == songs
  puts "Playing <songs>"
  else 
-   puts 
+   puts "Invalid input, please try again"
 end
 
 
 def exit_jukebox
-  
+  puts 
 end
 
 
