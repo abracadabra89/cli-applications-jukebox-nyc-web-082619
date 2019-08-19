@@ -22,7 +22,7 @@ songs = [
 
 
 
-def help()
+def help
   puts "I accept the following commands:"
   puts "- help : displays this help message"
   puts "- play : lets you choose a song to play"
@@ -31,7 +31,7 @@ def help()
  
 
 def list(songs)
-  my_songs.each_with_index do |song, index|
+  songs.each_with_index do |song, index|
     puts "#{index+1}. #{song}"
   end
 end
@@ -40,8 +40,8 @@ def play(songs)
  puts "Please enter a song name or number:"
   input = gets.chomp()
    if (1..9).to_a.index(input.to_i) != nil
-    puts "Playing #{my_songs[input.to_i - 1]}"
-  elsif my_songs.index(input) != nil
+    puts "Playing #{songs[input.to_i - 1]}"
+  elsif songs.index(input) != nil
     puts "Playing #{input}"
   else
     puts "Invalid input, please try again"
